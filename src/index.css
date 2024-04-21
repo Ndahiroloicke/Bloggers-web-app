@@ -3,132 +3,157 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 .body {
   background: rgb(50, 210, 50);
   color: white;
-  padding: 14px 8px;
+  padding: 8px 12px;
   display: flex;
   justify-content: space-between;
+  padding: 14px 8px;
 }
-
 .body h1 {
   margin-left: 12px;
   font-size: x-large;
 }
-
 .body ul {
   padding-left: 20px;
   display: flex;
 }
-
 .body ul li {
   list-style: none;
   color: white;
   padding-right: 20px;
   font-size: large;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 .body ul li:hover {
   color: #000;
   cursor: pointer;
   text-decoration: underline;
 }
-
 .blog-title {
-  margin: 30px 0 0 420px;
+  margin-top: 30px;
   width: 500px;
+  margin-left: 420px;
   height: 80px;
-  padding: 4px;
-  transition: .5s;
+  padding-left: 4px;
+  transition: 0.5s;
   border-radius: 10px;
 }
-
-.body a,
-.blog-title a {
+.body a {
   text-decoration: none;
   color: white;
   font-weight: 900;
 }
-
 .blog-title h2 {
   padding-top: 4px;
   color: rgb(50, 210, 50);
   font-size: 20px;
 }
-
 .blog-title p {
-  padding: 3px 0 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
 }
-
+.blog-title a {
+  text-decoration: none;
+}
 .blog-title:hover {
   box-shadow: 1px 3px 5px rgb(50, 210, 50);
   cursor: pointer;
 }
-
 .bloglist h1 {
-  margin: 30px 0 0 420px;
+  margin-left: 420px;
   font-size: 25px;
+  margin-top: 25px;
 }
 
-.loading,
-.create h2,
-.details .la2,
-.details h2 {
+.blog-title h2,
+p {
+  text-decoration: none;
+}
+.loading {
   font-size: 30px;
   color: rgb(50, 210, 50);
   margin-left: 550px;
+  margin-top: 120px;
 }
-
 .create {
   margin-top: 60px;
 }
-
 .create h2 {
   padding-top: 4px;
+  color: rgb(50, 210, 50);
   font-size: 30px;
   font-weight: 900;
-}
-
-.create form,
-.details .bod {
   margin-left: 490px;
 }
-
+.create form {
+  margin-left: 490px;
+}
 label {
   display: block;
   margin: 12px;
   font-size: 18px;
   margin-top: 19px;
 }
-
-input,
-textarea {
+input {
   width: 290px;
   height: 30px;
   outline: none;
+  padding-left: 4px;
+}
+textarea {
+  width: 290px;
+  height: 100px;
+  outline: none;
+  resize: none;
   padding: 4px;
 }
-
-textarea {
-  height: 100px;
-  resize: none;
-}
-
 select {
   width: 100px;
 }
-
-.create button,
-.details button {
+.create button {
   display: block;
   width: 290px;
   margin-top: 20px;
+  background-color: rgb(50, 210, 50);
   height: 30px;
+  border: 1px white solid;
+  color: white;
   font-size: medium;
   font-weight: 700;
+}
+.details .la2 {
+  font-size: 30px;
+  color: rgb(50, 210, 50);
+  margin-left: 550px;
+  margin-top: 120px;
+}
+.details h2 {
+  font-size: 30px;
+  color: rgb(50, 210, 50);
+  margin-left: 400px;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+.details p {
+  margin-left: 400px;
+  margin-top: 12px;
+  font-weight: 700;
+}
+.details .bod {
+  margin-left: 400px;
+  margin-top: 30px;
+  width: 400px;
+}
+.details button {
+  margin-left: 400px;
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 800;
   background-color: rgb(50, 210, 50);
   color: white;
-  border: 1px white solid;
+  border: none;
+  margin-top: 20px;
 }
