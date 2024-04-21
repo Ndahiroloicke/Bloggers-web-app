@@ -1,13 +1,134 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body {
+  background: rgb(50, 210, 50);
+  color: white;
+  padding: 14px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body h1 {
+  margin-left: 12px;
+  font-size: x-large;
+}
+
+.body ul {
+  padding-left: 20px;
+  display: flex;
+}
+
+.body ul li {
+  list-style: none;
+  color: white;
+  padding-right: 20px;
+  font-size: large;
+  transition: .5s;
+}
+
+.body ul li:hover {
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.blog-title {
+  margin: 30px 0 0 420px;
+  width: 500px;
+  height: 80px;
+  padding: 4px;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+.body a,
+.blog-title a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
+
+.blog-title h2 {
+  padding-top: 4px;
+  color: rgb(50, 210, 50);
+  font-size: 20px;
+}
+
+.blog-title p {
+  padding: 3px 0 5px;
+}
+
+.blog-title:hover {
+  box-shadow: 1px 3px 5px rgb(50, 210, 50);
+  cursor: pointer;
+}
+
+.bloglist h1 {
+  margin: 30px 0 0 420px;
+  font-size: 25px;
+}
+
+.loading,
+.create h2,
+.details .la2,
+.details h2 {
+  font-size: 30px;
+  color: rgb(50, 210, 50);
+  margin-left: 550px;
+}
+
+.create {
+  margin-top: 60px;
+}
+
+.create h2 {
+  padding-top: 4px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.create form,
+.details .bod {
+  margin-left: 490px;
+}
+
+label {
+  display: block;
+  margin: 12px;
+  font-size: 18px;
+  margin-top: 19px;
+}
+
+input,
+textarea {
+  width: 290px;
+  height: 30px;
+  outline: none;
+  padding: 4px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+select {
+  width: 100px;
+}
+
+.create button,
+.details button {
+  display: block;
+  width: 290px;
+  margin-top: 20px;
+  height: 30px;
+  font-size: medium;
+  font-weight: 700;
+  background-color: rgb(50, 210, 50);
+  color: white;
+  border: 1px white solid;
 }
