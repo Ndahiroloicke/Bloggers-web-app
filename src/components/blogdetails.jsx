@@ -11,9 +11,9 @@ const BlogDetails = () => {
     data: blog,
     ispending,
     ping,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch("http://localhost:7000/blogs/" + id);
   const handledelete = () => {
-    fetch("http://localhost:8000/blogs/" + blog.id, {
+    fetch("http://localhost:7000/blogs/" + blog.id, {
       method: "DELETE",
     }).then(() => {
       history.push("/");

@@ -2,7 +2,7 @@ import Bloglist from "./bloglist";
 import useFetch from "../usefetch";
 
 const Home = () => {
-  const { data, ispending, ping } = useFetch("http://localhost:8000/blogs");
+  const { data, ispending, ping } = useFetch("http://localhost:7000/blogs");
 
   //the empty array is used to run the function only the first render
   return (
