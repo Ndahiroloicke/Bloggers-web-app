@@ -6,7 +6,7 @@ const Bloglist = ({ title, blogs, handledelete }) => {
       <h1>{title}</h1>
       {blogs.map((blog) => (
         <div className="blog-title" key={blog.id}>
-          <Link to={`/blogs/${blog.id}`}>
+          <Link to={`/blogs/${blog.id}  `}>
             <h2>{blog.title}</h2>
             <p>Written by {blog.author}</p>
           </Link>
